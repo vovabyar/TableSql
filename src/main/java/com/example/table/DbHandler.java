@@ -44,7 +44,7 @@ public class DbHandler {
         }
     }
 
-    public void addProduct(Person newPerson, Person oldPperson) {
+    public void addPerson(Person newPerson, Person oldPperson) {
         try (PreparedStatement statement = this.connection.prepareStatement(
                 "UPDATE persons SET userName = ? WHERE id = ?")) {
             statement.setObject(1, newPerson.userName);

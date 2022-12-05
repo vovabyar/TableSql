@@ -93,7 +93,7 @@ public class TableViewDemo extends Application {
             newPerson.setUserName(newUserName);
             try {
                 DbHandler dbHandler = DbHandler.getInstance();
-                dbHandler.addProduct(newPerson, person);
+                dbHandler.addPerson(newPerson, person);
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
@@ -119,7 +119,7 @@ public class TableViewDemo extends Application {
 
                         try {
                             DbHandler dbHandler = DbHandler.getInstance();
-                            dbHandler.addProduct(newPerson, person);
+                            dbHandler.addPerson(newPerson, person);
                         } catch (SQLException e) {
                             throw new RuntimeException(e);
                         }
